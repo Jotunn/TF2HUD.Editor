@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <UseWindowsForms>true</UseWindowsForms>
     <StartupObject>HUDEditor.App</StartupObject>
@@ -19,17 +19,23 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <Description>A tool for installing and customizing your favorite Team Fortress 2 HUDs.</Description>
     <Product>TF2 HUD Editor</Product>
-    <SignAssembly>false</SignAssembly>
+    <SignAssembly>False</SignAssembly>
     <NeutralLanguage>en</NeutralLanguage>
     <PackageIconUrl />
     <AssemblyName>TF2HUD.Editor</AssemblyName>
     <RootNamespace>HUDEditor</RootNamespace>
     <PackageTags>tf2</PackageTags>
+    <DebugType>none</DebugType>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <OutputPath>bin\Output\</OutputPath>
     <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>True</Optimize>
   </PropertyGroup>
 
   <ItemGroup>
@@ -57,9 +63,9 @@
   <ItemGroup>
     <PackageReference Include="Autoupdater.NET.Official" Version="1.7.0" />
     <PackageReference Include="Extended.Wpf.Toolkit" Version="4.1.0" />
-    <PackageReference Include="log4net" Version="2.0.12" />
+    <PackageReference Include="log4net" Version="2.0.13" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="WPFLocalizeExtension" Version="3.9.0" />
+    <PackageReference Include="WPFLocalizeExtension" Version="3.9.1" />
   </ItemGroup>
 
   <ItemGroup>
