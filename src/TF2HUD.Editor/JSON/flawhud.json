@@ -652,7 +652,8 @@
               "resource/ui/huditemeffectmeter.res": {
                 "HudItemEffectMeter": {
                   "xpos": "c-60",
-                  "ypos": "c120"
+                  "ypos": "c120",
+                  "wide": "120"
                 },
                 "ItemEffectMeterLabel": {
                   "wide": "120"
@@ -762,7 +763,8 @@
               "resource/ui/huditemeffectmeter.res": {
                 "HudItemEffectMeter": {
                   "xpos": "c-60",
-                  "ypos": "r80"
+                  "ypos": "r80",
+                  "wide": "120"
                 },
                 "ItemEffectMeterLabel": {
                   "wide": "120"
@@ -869,102 +871,151 @@
             "Label": "Alternate",
             "Value": "2",
             "Files": {
-              "resource/ui/huditemeffectmeter.res": {
-                "HudItemEffectMeter": {
-                  "xpos": "r110",
-                  "ypos": "r65"
-                },
-                "ItemEffectMeterLabel": {
-                  "wide": "100"
-                },
-                "ItemEffectMeter": {
-                  "wide": "100"
+              "resource/ui/freezepanel_basic.res": {
+                "FreezePanelBase": {
+                  "ypos": "-c80"
                 }
               },
-              "resource/ui/huddemomancharge.res": {
-                "ChargeMeter": {
-                  "ypos": "c110"
+              "resource/ui/hudammoweapons.res": {
+                "AmmoBG": {
+                  "bgcolor_override": "HudBlack"
+                }
+              },
+              "resource/ui/huddamageaccount.res": {
+                "DamageAccountValue": {
+                  "xpos": "0",
+                  "ypos": "r75"
                 }
               },
               "resource/ui/huddemomanpipes.res": {
                 "PipesPresentPanel": {
-                  "ypos": "c92"
+                  "ypos": "c102"
+                }
+              },
+              "resource/ui/huditemeffectmeter.res": {
+                "HudItemEffectMeter": {
+                  "xpos": "r120",
+                  "ypos": "r65",
+                  "wide": "110"
+                },
+                "ItemEffectMeterLabel": {
+                  "wide": "110"
+                },
+                "ItemEffectMeter": {
+                  "wide": "110"
                 }
               },
               "resource/ui/huditemeffectmeter_cleaver.res": {
                 "HudItemEffectMeter": {
-                  "ypos": "r85"
-                }
-              },
-              "resource/ui/huditemeffectmeter_sodapopper.res": {
-                "HudItemEffectMeter": {
                   "ypos": "r75"
                 }
               },
-              "resource/ui/huditemeffectmeter_killstreak.res": {
+              "resource/ui/huditemeffectmeter_demoman.res": {
                 "HudItemEffectMeter": {
-                  "xpos": "120",
-                  "ypos": "r33"
+                  "xpos": "c-300",
+                  "ypos": "r50"
+                },
+                "ItemEffectMeterLabel": {
+                  "visible": "0",
+                  "enabled": "0"
+                },
+                "ItemEffectMeter": {
+                  "wide": "55"
+                },
+                "ItemEffectMeterCount": {
+                  "xpos": "25"
+                },
+                "StreakIcon": {
+                  "visible": "1",
+                  "enabled": "1"
+                },
+                "StreakIconShadow": {
+                  "visible": "1",
+                  "enabled": "1"
                 }
               },
-              "resource/ui/huddamageaccount.res": {
+              "resource/ui/huditemeffectmeter_killstreak.res": {
                 "DamageAccountValue": {
                   "xpos": "137",
                   "ypos": "r47"
                 }
               },
+              "resource/ui/huditemeffectmeter_sodapopper.res": {
+                "HudItemEffectMeter": {
+                  "ypos": "r85"
+                }
+              },
               "resource/ui/hudplayerclass.res": {
-                "PlayerStatusClassImage": {
-                  "xpos": "r125"
-                },
                 "classmodelpanel": {
-                  "xpos": "c200"
+                  "xpos": "c170",
+                  "fov": "20",
+                  "model": {
+                    "angles_y": "180",
+                    "origin_y": "-10",
+                    "origin_z": "-80"
+                  }
                 }
               },
               "resource/ui/hudplayerhealth.res": {
                 "HudPlayerHealth": {
                   "xpos": "10",
-                  "ypos": "r75"
+                  "ypos": "r77"
+                },
+                "PlayerStatusAnchor": {
+                  "xpos": "-15"
                 }
               },
               "resource/ui/hudrocketpack.res": {
-                "HudItemEffectMeter": {
-                  "ypos": "r60"
+                "ItemEffectMeter": {
+                  "wide": "55"
+                },
+                "ItemEffectMeter2": {
+                  "xpos": "55",
+                  "wide": "55"
+                }
+              },
+              "resource/ui/hudspellselection.res": {
+                "SpellIcon": {
+                  "wide": "20",
+                  "tall": "20"
+                },
+                "ActionText": {
+                  "tall": "0"
                 }
               },
               "scripts/hudlayout.res": {
                 "HudWeaponAmmo": {
-                  "xpos": "r110",
-                  "ypos": "r50"
-                },
-                "HudMannVsMachineStatus": {
-                  "ypos": "0"
+                  "xpos": "r120",
+                  "ypos": "r53"
                 },
                 "HudMedicCharge": {
-                  "ypos": "c60"
+                  "ypos": "c55"
+                },
+                "HudDemomanCharge": {
+                  "ypos": "60"
+                },
+                "CHudAccountPanel": {
+                  "xpos": "0"
                 },
                 "CHealthAccountPanel": {
-                  "xpos": "113",
-                  "ypos": "r90"
-                },
-                "CSecondaryTargetID": {
-                  "ypos": "355"
+                  "xpos": "95",
+                  "ypos": "r120",
+                  "wide": "100"
                 },
                 "DisguiseStatus": {
-                  "xpos": "115",
-                  "ypos": "r62"
-                },
-                "HudVoiceSelfStatus": {
-                  "ypos": "r120"
-                },
-                "HudMenuSpyDisguise": {
-                  "ypos": "c130"
-                },
-                "CMainTargetID": {
-                  "ypos": "r200"
+                  "xpos": "c135"
                 },
                 "HudSpellMenu": {
-                  "xpos": "c-210"
+                  "xpos": "c-240",
+                  "ypos": "r30"
+                },
+                "HudDemomanPipes": {
+                  "ypos": "50"
+                },
+                "HudAchievementTracker": {
+                  "NormalY": "300",
+                  "EngineerY": "300",
+                  "tall": "100"
                 }
               },
               "scripts/hudanimations_custom.txt": {
@@ -1372,7 +1423,7 @@
         "Label": "Loadout Style",
         "Type": "ComboBox",
         "ToolTip": "Switch between different Loadout screen layouts.",
-        "Width": 200, 
+        "Width": 200,
         "Value": "2",
         "Restart": true,
         "Options": [
